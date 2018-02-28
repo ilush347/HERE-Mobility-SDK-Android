@@ -7,12 +7,6 @@
   <version>0.1.0-BUILD_NUMBER_PLACEHOLDER</version>
   <dependencies>
     <dependency>
-      <groupId>com.here.mobility.sdk</groupId>
-      <artifactId>common</artifactId>
-      <version>0.1.0-BUILD_NUMBER_PLACEHOLDER</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
       <groupId>javax.annotation</groupId>
       <artifactId>javax.annotation-api</artifactId>
       <version>1.2</version>
@@ -35,19 +29,6 @@
       <artifactId>play-services-location</artifactId>
       <version>11.8.0</version>
       <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.here.mobility.sdk</groupId>
-      <artifactId>test</artifactId>
-      <version>0.1.0-BUILD_NUMBER_PLACEHOLDER</version>
-      <type>aar</type>
-      <scope>compile</scope>
-      <exclusions>
-        <exclusion>
-          <artifactId>*</artifactId>
-          <groupId>*</groupId>
-        </exclusion>
-      </exclusions>
     </dependency>
     <dependency>
       <groupId>io.grpc</groupId>
