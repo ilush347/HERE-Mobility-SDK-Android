@@ -4,23 +4,25 @@ Copyright © 2018, HERE Technologies. All rights reserved. The software, informa
 <div style="page-break-after: always;"></div>
 
 ## Table of contents
+
 1. [INTRODUCTION](#introduction)
-  1. [Mobility Demand](#mobility-demand)
-  2. [Map Services](#map-services)
+	1. [Mobility Demand](#mobility-demand)
+	2. [Map Services](#map-services)
 2. [PRE-REQUISITES](#prereqs)
-  1. [Operating System](#os)
+	1. [Operating System](#os)
 3. [GETTING STARTED](#getting-started)
-  1. [Obtaining HERE Credentials for Your App](#obtain-creds)
-  2. [Integrating Google Play Services into Your App](#google-play-services)
-  3. [Adding the HERE Mobility SDK as a Dependency](#add-dependency)
-  4. [Enabling Multidex](#multidex)
-  5. [Setting the Java Language Version](#java-version)
-  6. [Configuring Your `AndroidManifest.xml` File](#android-xml)
-  7. [Creating an `Application` Class](#application-class)
-  8. [Initializing the HERE Mobility SDK](#init-sdk)
-  9. [Authenticating App Users](#auth-users)
-  10. [Using the HERE Sandbox Platform](#use-sandbox)
+	1. [Obtaining HERE Credentials for Your App](#obtain-creds)
+	2. [Integrating Google Play Services into Your App](#google-play-services)
+	3. [Adding the HERE Mobility SDK as a Dependency](#add-dependency)
+	4. [Enabling Multidex](#multidex)
+	5. [Setting the Java Language Version](#java-version)
+	6. [Configuring Your `AndroidManifest.xml` File](#android-xml)
+	7. [Creating an `Application` Class](#application-class)
+	8. [Initializing the HERE Mobility SDK](#init-sdk)
+	9. [Authenticating App Users](#auth-users)
+	10. [Using the HERE Sandbox Platform](#use-sandbox)
 4. [API REFERENCE](#api-reference)
+
 <div style="page-break-after: always;"></div>
 
 ## Introduction <a name="introduction"></a>
