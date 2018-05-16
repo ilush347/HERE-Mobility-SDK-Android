@@ -1,5 +1,5 @@
 # HERE Mobility - Android SDK
-### Version 1.0.1, May 2018
+### Version 1.0.2, May 2018
 Copyright © 2018, HERE Technologies. All rights reserved. The software, information and all other materials contain in this documentation are confidential and proprietary information of HERE Technologies and are protected by applicable copyright legislation. The disclosure of information contained herein does not constitute any license or authorization to use or disclose information, ideas or concepts presented. No part of this documentation may be disclosed to any third party, copied, reproduced or stored on any type of media or used in any way by any party without the express prior, written consent of Here Technologies. This software, information and all other materials contain in this documentation are provided "as-is" and without warranties of any kind, either express or implied, including, but not limited to, the implied warranties of merchantability, fitness for a particular purpose, satisfactory quality and non-infringement. HERE Technologies does not warrant that the content is error free and HERE Technologies does not warrant or make any representations regarding the quality, correctness, accuracy, or reliability of the content.
 <div style="page-break-after: always;"></div>
 
@@ -49,7 +49,7 @@ The Map Services package provides comprehensive map capabilities, including:
 ## Pre-Requisites <a name="prereqs"></a>
 
 ### Operating System <a name="os"></a>
-The HERE Mobility SDK version 1.0.1 supports Android version 4.0.4 (API level 15) or later.
+The HERE Mobility SDK version 1.0.2 supports Android version 4.0.4 (API level 15) or later.
 
 
 ## Getting Started <a name="getting-started"></a>
@@ -83,8 +83,8 @@ In your app module’s build.gradle, add the following lines to your dependencie
 ```groovy
 dependencies{
 	...
-	implementation "com.here.mobility.sdk:demand:1.0.1"
-	implementation "com.here.mobility.sdk:map:1.0.1"
+	implementation "com.here.mobility.sdk:demand:1.0.2"
+	implementation "com.here.mobility.sdk:map:1.0.2"
 }
 ```
 
@@ -153,7 +153,7 @@ public void onCreate(){
 ```
 
 ### Authenticating App Users <a name="auth-users"></a>
-In order to make Here SDK API calls on behalf of your users (e.g. book rides), you must first "prove" us that they indeed your users by signing their username with your Secret Key. The recommended procedure is to have your backend server do this when the user logs in, and send the signed "hash" to the app. Once the app has the hash, it should pass it to the SDK like so:
+In order to make Here SDK API calls on behalf of your users (e.g. book rides), you must first "prove" us that they indeed your users by signing their username with your HERE SDK Secret Key. The recommended procedure is to have your backend server do this when the user logs in, and send the signed "hash" to the app. Once the app has the hash, it should pass it to the SDK like so:
 
 ```java
 HereMobilitySdk.setUserAuthInfo(
@@ -192,7 +192,7 @@ private static String signedHash(@NonNull String apiKey,     // Your API Key
 }
 ```
 
-***Note:*** It's important for us to be sure that each API call to the Mobility Demand API comes from a real user looking for rides because these calls are translated to actual taxis driving to pick up the users. Safeguard your Secret Key, and do not put it in the app, where is can be discovered by disassembling the app.
+***Note:*** It's important for us to be sure that each API call to the Mobility Demand API comes from a real user looking for rides because these calls are translated to actual taxis driving to pick up the users. Safeguard your Secret Key, and do not put it in the app, where it can be discovered by disassembling the app.
 
 ***Note for TechCrunch Hackathon developers:*** During the hackathon, and only then, for the purpose of saving time, you may put your Secret Key in the app, and perform the signing on the client.
 
